@@ -2,11 +2,24 @@
     background-color:#353535 ;
     color: white;
   padding: 1em 0em 1em 0em;
-  @media screen and (min-width: $breakpoint) {
+  @media screen and (min-width: $taille_limite) {
     display: flex;
     flex-direction: row-reverse;
   padding-right: 7em;
   align-items: center;
+  .footer--link{
+   color: white;
+  }
+  }
+  
+  h3{
+    font-weight: 400;
+    font-size: 16px;
+  }
+  ul{
+    @media screen and (min-width: $taille_limite) {
+      display: flex; 
+  }
   }
   
 &_title{
@@ -23,25 +36,12 @@
 }
 }
 
-footer a{
-    color: white;
-  }
-
-.footer ul{
-  @media screen and (min-width: $breakpoint) {
-    display: flex; 
-}
-}
 
 .footer li{
   
-  @media screen and (min-width:$breakpoint){
+  @media screen and (min-width:$taille_limite){
     margin-bottom: 0.5em;
     padding-left: 1em;
   }
 }
 
-.footer h3{
-  font-weight: 400;
-  font-size: 16px;
-}

@@ -12,7 +12,7 @@
 
 .introduction {
     text-align: center;
-    background-color: $quad-color;
+    background-color: $beige;
 
     &__title {
        
@@ -38,7 +38,7 @@ font-weight: 700;
 
 .functionning{
     margin-bottom: 50px;
-    @media screen and (min-width: $breakpoint) {
+    @media screen and (min-width: $taille_limite) {
      padding: 0 5em 0 5em;
   }
   
@@ -49,7 +49,7 @@ font-weight: 700;
   
     &__list {
         padding-left: 0;
-        @media screen and (min-width: $breakpoint) {
+        @media screen and (min-width: $taille_limite) {
           display: flex;
           justify-content: space-between;
         }
@@ -59,18 +59,18 @@ font-weight: 700;
         justify-content: flex-start;
         align-items: center;
         flex-wrap: nowrap;
-       padding: 0.5em;
+        padding: 0.5em;
         margin: 1.5em 1.5em;
         font-weight: 500;
         border-radius: 25px;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-        background-color: $quad-color;
-        @media screen and (min-width: $breakpoint){
+        background-color: $beige;
+        @media screen and (min-width: $taille_limite){
           width: 20em;
         }
       }
         &--number {
-          background-color: $primary-color;
+          background-color: $violet;
           color: white;
           border-radius: 50%;
           padding: 0.2em;
@@ -92,5 +92,5 @@ font-weight: 700;
     }
 }
 .fa-store{
-    color: $primary-color
+    color: $violet
 }
