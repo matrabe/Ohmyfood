@@ -2,11 +2,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+.titre_logo {
     text-align: center;
+    height: 2.25rem;
     font-family: 'Shrikhand', cursive;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0.50rem;
+    margin-bottom: 1.00rem;
+    
+    @media screen and (min-width: $taille_limite) {
+       margin-top :1.50rem;
+       margin-bottom: 1.61rem;
+       height: 2.125rem;
+    }
 }
 
 a {

@@ -19,7 +19,11 @@
   img {
     object-fit: cover;
     width: 100%;
-    height: 383px;
+    height: 17.187rem;
+
+      @media screen and (min-width: $taille_limite) {
+      height: 23.937rem;
+     }
   }
 }
 
@@ -68,12 +72,14 @@
   }
 
 
-
   &__part {
     box-sizing: border-box;
   }
-}
 
+  .menu__block{
+    margin-bottom: 2.5rem;
+  }
+}
 
 .category {
   &__name {
@@ -170,11 +176,11 @@
 .command {
   display: flex;
   justify-content: center;
-  padding-top: 1em;
 
   &__button {
     @include button-pink;
-    width: 20em;
+    width: 11.625rem;
+    margin-top: 0;
   }
 }
 

@@ -1,47 +1,51 @@
-.footer{
-    background-color:#353535 ;
-    color: white;
+.footer {
+  background-color: #353535;
   padding: 1em 0em 1em 0em;
+
   @media screen and (min-width: $taille_limite) {
     display: flex;
     flex-direction: row-reverse;
-  padding-right: 7em;
-  align-items: center;
-  .footer--link{
-   color: white;
+    padding-right: 7em;
+    align-items: center;
+
   }
+
+  .footer_title {
+    color: white;
   }
-  
-  h3{
+
+  h3 {
     font-weight: 400;
     font-size: 16px;
+    color: white;
   }
-  ul{
+
+  ul {
     @media screen and (min-width: $taille_limite) {
-      display: flex; 
+      display: flex;
+    }
   }
-  }
-  
-&_title{
+
+  &_title {
     font-family: 'Shrikhand', cursive;
     padding-left: 2.25em;
     font-size: 18px;
-    
-}
-&_logo{
-    
+
+  }
+
+  &_logo {
+
     display: flex;
     align-items: baseline;
     gap: 0.5em;
-}
+  }
 }
 
 
-.footer li{
-  
-  @media screen and (min-width:$taille_limite){
+.footer li {
+
+  @media screen and (min-width:$taille_limite) {
     margin-bottom: 0.5em;
     padding-left: 1em;
   }
 }
-

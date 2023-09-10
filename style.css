@@ -3,11 +3,19 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+.titre_logo {
   text-align: center;
+  height: 2.25rem;
   font-family: "Shrikhand", cursive;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .titre_logo {
+    margin-top: 1.5rem;
+    margin-bottom: 1.61rem;
+    height: 2.125rem;
+  }
 }
 
 a {
@@ -238,12 +246,11 @@ li {
 .fa-heart {
   position: absolute;
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .footer {
   background-color: #353535;
-  color: white;
   padding: 1em 0em 1em 0em;
 }
 @media screen and (min-width: 1024px) {
@@ -253,13 +260,14 @@ li {
     padding-right: 7em;
     align-items: center;
   }
-  .footer .footer--link {
-    color: white;
-  }
+}
+.footer .footer_title {
+  color: white;
 }
 .footer h3 {
   font-weight: 400;
   font-size: 16px;
+  color: white;
 }
 @media screen and (min-width: 1024px) {
   .footer ul {
@@ -304,7 +312,12 @@ li {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 383px;
+  height: 17.187rem;
+}
+@media screen and (min-width: 1024px) {
+  .menu_pix img {
+    height: 23.937rem;
+  }
 }
 
 .container {
@@ -354,6 +367,9 @@ li {
 }
 .menu__part {
   box-sizing: border-box;
+}
+.menu .menu__block {
+  margin-bottom: 2.5rem;
 }
 
 .category__name {
@@ -445,7 +461,6 @@ li {
 .command {
   display: flex;
   justify-content: center;
-  padding-top: 1em;
 }
 .command__button {
   background-image: linear-gradient(#9356DC, #FF79DA);
@@ -460,7 +475,8 @@ li {
   background: var(--button-gradient, linear-gradient(175deg, #9356DC 0%, #FF79DA 100%));
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transition: background 0.3s ease, opacity 0.3s ease;
-  width: 20em;
+  width: 11.625rem;
+  margin-top: 0;
 }
 .command__button:hover {
   opacity: 0.8;
