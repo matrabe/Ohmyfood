@@ -1,16 +1,10 @@
 @charset "UTF-8";
 /* Variables colors */
-/* La classe ".loader" est utilisée pour styliser un élément de chargement. */
 .loader {
-  /* Fixe l'élément en position absolue par rapport à la fenêtre du navigateur. */
   position: fixed;
-  /* Utilise le modèle de disposition en grille. */
   display: grid;
-  /* Centre le contenu de la grille horizontalement et verticalement. */
   place-items: center;
-  /* Définit un arrière-plan avec un dégradé linéaire du gris foncé (#504f4f) vers le blanc. */
   background: linear-gradient(#504f4f, white);
-  /* Définit la hauteur de l'élément à 100 % de la hauteur de la fenêtre (viewport height). */
   height: 100vh;
   /* Définit la marge intérieure de l'élément à 0, ce qui signifie qu'il occupera tout l'espace disponible. */
   inset: 0;
@@ -37,9 +31,7 @@
   font-family: shrikhand;
 }
 
-/* Les éléments <span> à l'intérieur de l'élément avec la classe ".word" sont stylisés. */
 .word span {
-  /* Affiche les éléments <span> comme des éléments en ligne avec une boîte de bloc. */
   display: inline-block;
   /* Applique une animation nommée "spin" aux éléments <span>. L'animation a une durée de 3 secondes. */
   animation: spin 3s;
@@ -79,7 +71,6 @@
   animation-delay: 1.4s;
 }
 
-/* Les commentaires ci-dessus se répètent pour chaque élément <span> jusqu'au huitième. Chaque élément a un délai d'animation légèrement différent pour créer un effet de rotation progressif ou de défilement pour les éléments. */
 @keyframes disappear {
   0% {
     transform: scale(1);
