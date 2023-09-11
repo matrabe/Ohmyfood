@@ -6,6 +6,12 @@
     background-image: linear-gradient($rose, $violet);
     -webkit-background-clip: text;
     background-clip: text;
+     &:hover {
+      opacity: 1;
+      background-position: 0% 100%;
+      background-image: linear-gradient($rose, $violet);
+      transition: opacity 1s ease-in-out;
+    }
   }
   
   .my-heart-full:hover {
