@@ -1,4 +1,108 @@
+@charset "UTF-8";
 /* Variables colors */
+/* La classe ".loader" est utilisée pour styliser un élément de chargement. */
+.loader {
+  /* Fixe l'élément en position absolue par rapport à la fenêtre du navigateur. */
+  position: fixed;
+  /* Utilise le modèle de disposition en grille. */
+  display: grid;
+  /* Centre le contenu de la grille horizontalement et verticalement. */
+  place-items: center;
+  /* Définit un arrière-plan avec un dégradé linéaire du gris foncé (#504f4f) vers le blanc. */
+  background: linear-gradient(#504f4f, white);
+  /* Définit la hauteur de l'élément à 100 % de la hauteur de la fenêtre (viewport height). */
+  height: 100vh;
+  /* Définit la marge intérieure de l'élément à 0, ce qui signifie qu'il occupera tout l'espace disponible. */
+  inset: 0;
+  /* Définit la position de l'élément dans la pile d'affichage, avec un indice z de 1 (au-dessus des éléments avec un indice z inférieur). */
+  z-index: 1;
+  /* Définit l'opacité de l'élément à 0.9 (90 % d'opacité). */
+  opacity: 0.9;
+  /* Applique une animation nommée "disappear" à l'élément. L'animation a une durée de 0.3 secondes,
+     démarre après un délai de 3.5 secondes, et conserve les propriétés finales de l'animation une fois terminée. */
+  animation: disappear 0.3s 3.5s forwards;
+}
+
+/* La classe ".word" est utilisée pour styliser un texte à l'intérieur de l'élément de chargement. */
+.word {
+  /* Affiche les éléments comme des éléments en ligne avec une boîte de bloc (pour permettre le centrage). */
+  display: inline-block;
+  /* Définit la taille de la police à 70 pixels. */
+  font-size: 70px;
+  /* Définit la couleur du texte en bleu (#60d9f1). */
+  color: #60d9f1;
+  /* Ajoute une ombre de texte avec un décalage horizontal de 3px, un décalage vertical de 3px et une couleur d'ombre noire (#000000). */
+  text-shadow: 3px 3px 3px #000000;
+  /* Définit la famille de polices à "shrikhand". */
+  font-family: shrikhand;
+}
+
+/* Les éléments <span> à l'intérieur de l'élément avec la classe ".word" sont stylisés. */
+.word span {
+  /* Affiche les éléments <span> comme des éléments en ligne avec une boîte de bloc. */
+  display: inline-block;
+  /* Applique une animation nommée "spin" aux éléments <span>. L'animation a une durée de 3 secondes. */
+  animation: spin 3s;
+}
+
+/* Les éléments <span> sont ciblés individuellement par leur position à l'intérieur de l'élément ".word". */
+.word span:nth-child(1) {
+  /* Applique un délai de 0s à la première occurrence de <span>. */
+  animation-delay: 0s;
+}
+
+.word span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.word span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.word span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.word span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.word span:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.word span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+.word span:nth-child(8) {
+  animation-delay: 1.4s;
+}
+
+/* Les commentaires ci-dessus se répètent pour chaque élément <span> jusqu'au huitième. Chaque élément a un délai d'animation légèrement différent pour créer un effet de rotation progressif ou de défilement pour les éléments. */
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes menuFadeIn {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -358,6 +462,7 @@ li {
 .menu {
   margin-left: 1em;
   margin-right: 1em;
+  animation: menuFadeIn 4s forwards;
 }
 @media screen and (min-width: 1024px) {
   .menu {

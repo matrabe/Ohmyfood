@@ -65,12 +65,11 @@
 .menu {
   margin-left: 1em;
   margin-right: 1em;
- 
+  animation: menuFadeIn 4s forwards;
   @media screen and (min-width: $taille_limite) {
-    margin-left: 20%;
+  margin-left: 20%;
   margin-right: 20%;
   }
-
 
   &__part {
     box-sizing: border-box;
@@ -80,6 +79,7 @@
     margin-bottom: 2.5rem;
   }
 }
+
 
 .category {
   &__name {
