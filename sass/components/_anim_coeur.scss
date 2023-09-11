@@ -14,12 +14,6 @@
     }
   }
   
-  .my-heart-full:hover {
-    opacity: 1;
-    background-position: 0% 100%;
-    background-image: linear-gradient($rose, $violet);
-    transition: opacity 1s ease-in-out;
-  }
   
   .fa-heart {
     position: absolute;
